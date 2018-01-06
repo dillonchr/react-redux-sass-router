@@ -1,0 +1,36 @@
+@import "./variables";
+
+#sidebar {
+    background: $sidebar-bg;
+    color: $sidebar-font-color;
+    height: 100vh;
+    position: fixed;
+    width: $sidebar-width;
+
+    h1 {
+        box-shadow: 0 1px #283135;
+        padding: 0 0 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $sidebar-font-color;
+            display: block;
+            padding: 5px 20px;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.sidebar-active {
+                background: $sidebar-selected-bg;
+                color: $sidebar-selected-font-color;
+            }
+        }
+    }
+}

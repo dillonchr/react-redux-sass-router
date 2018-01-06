@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| COLORS
+|--------------------------------------------------------------------------
+*/
+
+$primary: #3aa6b4;
+$secondary: #e45444;
+
+$sidebar-bg: #324050;
+$sidebar-selected-bg: #3F4F61;
+$sidebar-font-color: #9FA8AC;
+$sidebar-selected-font-color: #ffffff;
+$sidebar-active-color: $primary;
+$sidebar-width: 285px;
+
+
+/*
+|--------------------------------------------------------------------------
+| TYPOGRAPHY
+|--------------------------------------------------------------------------
+*/
+
+$base-font-family: 'Open Sans', Helvetica, sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 20px;
+$base-unit: 'rem';
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+$indent-amount: 40px;
+$normalize-vertical-rhythm: true;
