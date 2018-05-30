@@ -1,19 +1,22 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { getTranslate } from 'react-localize-redux';
 import '../style/main-header.scss';
 
 class MainHeader extends React.PureComponent {
     render() {
         return (
             <div id={'main-header'}>
-                Main Header
+                {this.props.translate('app.title')}
             </div>
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    return {};
+    return {
+        translate: getTranslate(state.locale)
+    };
 };
 
 const mapDispatchToProps = (dispatch) => {

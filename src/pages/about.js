@@ -1,20 +1,23 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { getTranslate } from 'react-localize-redux';
 
 class About extends React.PureComponent {
     render() {
         return (
             <div>
-                <h1>About</h1>
-                <Link to={'/'}>Home</Link>
+                <h1>{this.props.translate('about.page_title')}</h1>
+                <Link to={'/'}>{this.props.translate('home.page_title')}</Link>
             </div>
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    return {};
+    return {
+        translate: getTranslate(state.locale)
+    };
 };
 
 const mapDispatchToProps = (dispatch) => {

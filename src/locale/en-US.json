@@ -1,0 +1,11 @@
+{
+    "app": {
+        "title": "App Title"
+    },
+    "about": {
+        "page_title": "About"
+    },
+    "home": {
+        "page_title": "Home"
+    }
+}
